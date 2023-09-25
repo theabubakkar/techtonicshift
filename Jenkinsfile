@@ -1,10 +1,6 @@
 pipeline {
     agent any  // This will run the pipeline on any available agent
     
-    when {
-        branch 'main'
-    }
-    
     stages {
         stage('Build') {
             steps {
